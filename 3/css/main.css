@@ -1,0 +1,351 @@
+.menu
+{
+    height: 50px;
+    margin: 0 auto;
+    line-height: 50px;
+    width: 960px;
+}
+.menu a
+{
+    font-size: 19px;
+    font-family: "Georgia", sans-serif;
+    color: black;
+}
+
+.about_me_item
+{
+    width: 140px;
+    height: 100%;
+    float: left;
+    background-image: url("../images/about_me_icon.png");
+    background-repeat: no-repeat;
+    background-position: 22px 15px;
+}
+
+.about_me_item:hover
+{
+    background-image: url("../images/w_about_me_icon.png");
+    background-repeat: no-repeat;
+    background-position: 22px 15px;
+    background-color: rgb(21,169,140);
+    color: white;
+}
+.about_me_item a
+{
+    margin-left: 20px;
+    height: 100%;
+}
+.menu span
+{
+    margin-left: 47px;
+}
+.hobby_item
+{
+    width: 160px;
+    height: 100%;
+    float: left;
+    background-image: url("../images/hobby_icon.png");
+    background-repeat: no-repeat;
+    background-position: 22px 15px;
+}
+
+.hobby_item a
+{
+    //display: inline; 
+    margin-left: 20px;
+    height: 100%;
+}
+.hobby_item:hover
+{
+    background-color: rgb(21,169,140);
+    color: white;
+    background-image: url("../images/w_my_hobby.png");
+    background-repeat: no-repeat;
+    background-position: 22px 15px;
+}
+.my_films_item
+{
+    width: 230px;
+    height: 100%;
+    float: left;
+    background-image: url("../images/video_icon.png");
+    background-repeat: no-repeat;
+    background-position: 22px 15px;
+}
+.my_films_item:hover
+{
+    background-color: rgb(21,169,140);
+    color: white;
+    background-image: url("../images/w_video_icon.png");
+    background-repeat: no-repeat;
+    background-position: 22px 15px;    
+}
+.my_films_item a
+{
+    display: block; 
+    height: 100%;
+    color: black;
+}
+.background
+{
+    max-width:  1920px;
+    //min-width: 320px;
+    margin: 0 auto;
+    position: relative;
+    border: 0px;
+
+}
+.dark
+{
+    position: relative;
+    margin-top: -405px;
+    border: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content
+{
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+}
+.content .left_part
+{
+    float: left;
+    width: 330px;
+    margin-right: 60px;
+    padding-left: 20px;
+    margin-top: -196px;
+}
+.header3
+{
+    font-size: 24px;
+    line-height: 34px;
+    color: rgb(21,169,140);
+    font-family: "open sans", sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+.left_part .foto
+{
+    border-radius: 5px;
+    height: 350px;
+    width: 330px;
+}
+.right_part
+{
+    float: left;
+    width: 570px;
+    margin-top: -170px;
+}
+
+.blockquote_block
+{
+    height: 210px;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.quote
+{
+    margin-top: 50px;
+    width: 130px;
+    height: 70px;
+}
+blockquote
+{
+
+    font-size: 28px;
+    line-height: 42px;
+    color: rgb(255,255,255);
+    font-family: "Georgia", sans-serif;
+    font-style: italic;
+}
+.autor
+{
+    line-height: 46px;
+    font-size: 16px;
+    color: rgb(255,255,255);
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 42px;
+}
+.right_part .about_me h1
+{
+    font-size: 48px;
+    line-height: 42px;
+    color: rgb(51,51,51);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    
+}
+.line
+{
+    margin-top: 32px;
+    margin-bottom: 40px;
+    height: 6px;
+    border-radius: 2px;
+}
+
+.my_hobby
+{
+    font-size: 36px;
+    line-height: 42px;
+    color: rgb(51,51,51);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    margin-top: 46px;
+    margin-bottom: 18px;
+    margin-left: 0px;
+}
+
+.list_text
+{
+    font-size: 19px;
+    line-height: 36px;
+    color: rgb(85,85,85);
+    font-family: "Georgia", sans-serif;
+    text-align: left;
+    
+}
+
+.text
+{
+    font-size: 19px;
+    line-height: 32px;
+    color: rgb(85,85,85);
+    font-family: "Georgia", sans-serif;
+}
+
+.write_me
+{
+    margin-top: 42px;
+    width: 150px;
+    font-size: 19px;
+    line-height: 32px;
+    color: rgb(21,169,139);
+    font-family: "Georgia", sans-serif;
+}
+
+.write_me .link_name
+{
+    border-bottom: 2px solid rgb(21,169,139);
+}
+
+.write_me .none
+{
+    border-bottom: 0px solid rgb(21,169,139);
+}
+li
+{
+    margin-left: 20px;
+}
+
+a
+{
+    color: rgb(21,169,139);
+    text-decoration: none;
+}
+.empty
+{
+    margin-top: 0px;
+}
+.my_films_block
+{
+    width: 1200px;
+    margin: 96px auto;
+}
+.my_films_block img
+{
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.my_films_block h2
+{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    color: rgb(51,51,51);
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 34px;
+}
+.my_films_block h4
+{
+    font-size: 22px;
+    line-height: 32px;
+    color: rgb(51,51,51);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.my_films_block p
+{
+    font-size: 16px;
+    line-height: 28px;
+    color: rgb(85,85,85);
+    font-family: "Georgia", sans-serif;
+}
+.my_films_block .first_film
+{
+    float: left;
+    width: 23.75%;
+    margin-right: 20px;
+}
+.my_films_block .second_film
+{
+    float: left;
+    width: 23.75%;
+    margin-right: 20px;
+}
+.my_films_block .third_film
+{
+    float: left;
+    width: 23.75%;
+    margin-right: 20px;
+}
+.my_films_block .fourth_film
+{
+    float: left;
+    width: 23.75%;
+    margin: 0 auto;
+}
+.all_films
+{
+    //margin: 58 auto;
+    margin-top: 56px;
+    margin-left: 632px;
+    width: 217px;
+    height: 50px;
+    background-color: rgb(21,169,140);
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 70px;
+}
+.all_films p
+{
+    margin: 0 auto;
+    line-height: 50px;
+    font-size: 19px;
+    color: rgb(245,245,245);
+    font-family: "Georgia", sans-serif;
+}
+.copyright
+{
+    height: 70px;
+    width: 100%;
+    //text-align: center;
+    background-color: rgb(245,245,245);;
+}
+.copyright p
+{
+    margin-left: 384px;
+    font-size: 16px;
+    line-height: 70px;
+    color: rgb(85,85,85);
+    font-family: "Georgia", sans-serif;
+}
