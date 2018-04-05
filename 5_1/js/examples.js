@@ -9,16 +9,17 @@ function lastChar(myString) {
 
 console.log('Последний символ строки: ' + lastChar(myStringOne));
 
-function withoutLastChar() {
-  return myStringOne.slice(0, myStringOne.length - 1);
+function withoutLastChar(string) {
+  return string.slice(0, string.length - 1);
 }
 
 console.log('Строка без последнего символа: ' + withoutLastChar(myStringOne));
 
 function reverseString(myString) {
   var newString = '';
-  for (var i = myString.length; i >= 0; i--)
-    newString += myString.charAt(i);
+  for (var i = myString.length; i >= 0; i--) {
+      newString += myString.charAt(i);
+  }
   return newString;
 }
 
@@ -29,14 +30,16 @@ function deleteExtraBlanks(myString) {
   var strLenght = myString.length;
   var i = 0;
   while (myString.charAt(i) == ' ') i++;
+  
   for (i; i < strLenght;) {
     while (myString.charAt(i) != ' ') {
       newString += myString.charAt(i++);
     }
     while (myString.charAt(i) == ' ') i++;
+      
     if (myString.charAt(i) != ' ') {
       newString += ' ';
-    }  
+    }
   }
   return newString;
 }
