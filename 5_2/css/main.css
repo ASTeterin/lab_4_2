@@ -250,7 +250,18 @@ a
     margin-bottom: 56px;
 }
 
-.my_films_block img
+.advansedFilmBlock
+{
+    display: none;
+    max-width: 1200px;
+    width: 62,5%;
+    margin: 0 auto;
+    margin-top: 94px;
+    margin-bottom: 56px;
+}
+
+.my_films_block img,
+.advansedFilmBlock img
 {
     border-radius: 6px;
     margin-bottom: 16px;
@@ -269,7 +280,9 @@ a
     margin-bottom: 34px;
 }
 
-.my_films_block h4
+.my_films_block h4,
+.advansedFilmBlock h4
+
 {
     font-size: 22px;
     line-height: 32px;
@@ -279,7 +292,8 @@ a
     margin-bottom: 18px;
 }
 
-.my_films_block p
+.my_films_block p,
+.advansedFilmBlock p
 {
     font-size: 16px;
     line-height: 28px;
@@ -287,28 +301,28 @@ a
     font-family: "Georgia", sans-serif;
 }
 
-.my_films_block .first_film
+.first_film
 {
     float: left;
     width: 23.75%;
     margin-right: 20px;
 }
 
-.my_films_block .second_film
+.second_film
 {
     float: left;
     width: 23.75%;
     margin-right: 20px;
 }
 
-.my_films_block .third_film
+.third_film
 {
     float: left;
     width: 23.75%;
     margin-right: 20px;
 }
 
-.my_films_block .fourth_film
+.fourth_film
 {
     float: left;
     width: 23.75%;
