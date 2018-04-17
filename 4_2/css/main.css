@@ -411,6 +411,7 @@ input[type="text"]
     margin-top: 4px;
     margin-bottom: 24px;
     padding-left: 3%;
+    font-family: "Open Sans", sans-serif;
 }
 
 select
@@ -487,6 +488,7 @@ textarea
     resize: none;
     padding: 3%;
     font-size: 20px;
+    font-family: "Open Sans", sans-serif;
 }
 
 input[type="submit"]
@@ -586,12 +588,14 @@ input[type="submit"]
     }
     
 }
+
 @media screen and (max-width: 800px)
 {
     body
     {
         background-size: 1700px;
     }
+    
     .content .left_part,
     .content .right_part
     {

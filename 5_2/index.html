@@ -58,7 +58,44 @@
             </div>
             <div class="clear"></div>
         </div>
-
+        <div class="background"></div>    
+        <div class="popup">
+            <h2 class="write_me_header">Напиши мне</h2>
+            <a id="close_window" href=# ></a>
+            <div class="clear"></div>
+            <div class="feedback_form">
+                <form name="contact_form">
+                    <label class="feedback_label">Ваше имя<span class="red_star">*</span>     
+                    <p></p>
+                        <input id="name" name="username" type=text>
+                    </label>
+                    <p></p>
+                    <label>Ваш email<span class="red_star">*</span>
+                        <p></p>
+                        <input id="user_email" name="user_email" type=text>
+                    </label>
+                    <p></p>
+                    <label>Откуда вы?
+                        <p></p>
+                        <select name="country">
+                            <option value="russia">Россия</option>
+                            <option value="uk">Великобритания</option>
+                            <option value="germany">Германия</option>
+                        </select>
+                    </label>
+                    <p class="gender">Ваш пол</p>
+                    <label><input type="radio" name="sex" value="men" checked="checked"><span class="sex">Мужской</span></label>
+                    <label><input type="radio" name="sex" value="women"><span class="sex">Женский</span></label>
+                    <p></p>
+                    <label>Ваше сообщение<span class="red_star">*</span>
+                        <textarea id="text_area" name="message"></textarea>
+                    </label>
+                    <label>
+                        <input id="send" type="submit" value="Отправить">
+                    </label>
+                </form>
+            </div>
+        </div>
         <div class="my_films_block">
             <h2>Любимые фильмы</h2>
             <div class="first_film">
@@ -110,43 +147,13 @@
             
         </div>
         <a class="all_films" id="all_films_button" href="">Все фильмы</a>
-        <div class="feedback_writeme">
+        /*<div class="feedback_writeme">
             <div class="line"></div>
             <div class="feedback_header"><h2>НАПИШИ МНЕ</h2></div>
             <div class="line"></div>
             <div class="clear"></div>
-        </div>
-        <div class="feedback_form">
-            <form name="contact_form">
-                <label class="feedback_label">Ваше имя<span class="red_star">*</span>     <p></p>
-                    <input name="username" type=text>
-                </label>
-                <p></p>
-                <label>Ваш email<span class="red_star">*</span>
-                    <p></p>
-                    <input name="user_email" type=text>
-                </label>
-                <p></p>
-                <label>Откуда вы?
-                    <p></p>
-                    <select name="country">
-                        <option value="russia">Россия</option>
-                        <option value="uk">Великобритания</option>
-                        <option value="germany">Германия</option>
-                    </select>
-                </label>
-                <p class="gender">Ваш пол</p>
-                <label><input type="radio" name="sex" value="men" checked="checked"><span class="sex">Мужской</span></label>
-                <label><input type="radio" name="sex" value="women"><span class="sex">Женский</span></label>
-                <p></p>
-                <label>Ваше сообщение<span class="red_star">*</span>
-                    <textarea name="message"></textarea>
-                </label>
-                <label>
-                    <input type="submit"  id="send" value="Отправить">
-                </label>
-            </form>
-        </div>
+        </div>*/
+        
         <div class="copyright">
             <p class="copyright_text">© 2006-2018 Поволжский государственный технологический Университет, ФГБОУ ВО "ПГТУ"</p>
         </div>
