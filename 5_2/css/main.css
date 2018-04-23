@@ -250,7 +250,7 @@ a
     margin-bottom: 56px;
 }
 
-.advansedFilmBlock
+.advansed_film_block
 {
     visibility: hidden;
     overflow: hidden;
@@ -258,7 +258,6 @@ a
     max-width: 1200px;
     width: 62,5%;
     margin: 0 auto;
-    margin-top: 94px;
     margin-bottom: 56px;
     opacity: 0;
 }
@@ -268,21 +267,20 @@ a
     height: auto;
     visibility: visible;
     transition: 2s;
-    display: block;
     opacity: 1;
 }
 
 .my_films_block img,
-.advansedFilmBlock img
+.advansed_film_block img
 {
     border-radius: 6px;
     margin-bottom: 16px;
     max-width: 100%;
     height: auto;
-
 }
 
-.my_films_block h2
+.my_films_block h2,
+ h2
 {
     font-size: 36px;
     font-weight: 500;
@@ -292,9 +290,7 @@ a
     margin-bottom: 34px;
 }
 
-.my_films_block h4,
-.advansedFilmBlock h4
-
+ h4
 {
     font-size: 22px;
     line-height: 32px;
@@ -305,7 +301,7 @@ a
 }
 
 .my_films_block p,
-.advansedFilmBlock p
+.advansed_film_block p
 {
     font-size: 16px;
     line-height: 28px;
@@ -340,6 +336,7 @@ a
     width: 23.75%;
     margin: 0;
 }
+
 .all_films
 {
     padding: 15px 0;
@@ -435,13 +432,12 @@ form
 
 .popup 
 {
-    position: fixed; /* фиксированное положение */
-    //top: 50px;
+    position: fixed;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 900;
-    //opacity: 1;
     height: 100%;
     width: 100%;
     display: none;
@@ -453,18 +449,20 @@ form
     overflow: auto;
 }
 
+.set_visible
+{
+    display: block;
+}
+
 #close_window
 {
     background-image: url("../images/exit_icon.png");
     background-repeat: no-repeat;
-    //background-position: 90%;
     display: block;
     float: left;
     padding: 20px 20px;
     margin-left: 47%;
     margin-top: 32px;
-    
-    
 }
 
 input[type="text"]
@@ -476,8 +474,6 @@ input[type="text"]
     margin-top: 4px;
     margin-bottom: 24px;
     padding-left: 3%;
-    border: 2px solid rgb(201,201,201);
-    border-radius: 2px;
 }
 
 select
@@ -503,12 +499,24 @@ select
     background-position: 97% 50%;
 }
 
-select:hover, input:hover, textarea:hover
+
+.required_field
+{
+    border: 2px solid rgb(201,201,201);
+    border-radius: 2px;
+}
+
+.required_field:hover
 {
     border: 2px solid rgb(166,166,166);
 }
 
-input:focus, select:focus, textarea:focus
+.error
+{
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.required_field:focus
 {
     border:2px solid rgb(21,169,140);
 }
@@ -598,7 +606,8 @@ input[type="submit"]
 
 @media screen and (max-width: 1280px) and (min-width: 640px)
 {
-    .my_films_block .first_film
+
+    .first_film
     {
         width: 43%;
         margin-right: 0;
@@ -606,7 +615,8 @@ input[type="submit"]
         margin-bottom: 3%;
     }
     
-    .my_films_block .second_film
+
+    .second_film
     {
         width: 43%;
         margin-right: 3%;
@@ -614,7 +624,8 @@ input[type="submit"]
         margin-bottom: 3%;
     }
     
-    .my_films_block .third_film
+
+    .third_film
     {
         width: 43%;
         margin-right: 0;
@@ -626,19 +637,21 @@ input[type="submit"]
         clear: both;
     }
     
-    .my_films_block .fourth_film
+
+    .fourth_film
     {
         width: 43%;
         margin-left: 3%;
         margin-right: 4%;
     }
     
-    .my_films_block img
+    img
     {
         width: 100%;
         height: auto;
     }
 }
+
 @media screen and (max-width: 570px)
 {
     .content .left_part
@@ -721,26 +734,28 @@ input[type="submit"]
         width: 105px;
     }
     
-    .my_films_block
+    .my_films_block,
+    .advansed_film_block
     {
         width: 90%;
         margin: 30px auto;
     }
     
-    .my_films_block .first_film, .my_films_block .second_film,
-    .my_films_block .third_film,
-    .my_films_block .fourth_film
+    .first_film,
+    .second_film,
+    .third_film,
+    .fourth_film
     {
         width: 90%;
         margin: 0 auto;
         float: none;
     }
     
-    .my_films_block img
+    img
     {
         width: 100%;
         height: auto;
-    }
+    }   
     
     body
     {
@@ -766,6 +781,7 @@ input[type="submit"]
     }
     
     .my_films_block h2
+    h2
     {
         margin-top: 40px;
     }
