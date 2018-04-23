@@ -1,0 +1,276 @@
+.text_options
+{
+    font-family: "Source Sans Pro";
+    color: #506a85;
+}
+
+.central_background
+{
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+}
+
+
+
+.central_block
+{
+    text-align: center;
+}
+
+.central_block h1
+{
+    margin-top: 315px;
+    margin-bottom: 35px;
+    
+    font-size: 78px;
+    letter-spacing: 5px;
+    line-height: 68px;
+    color: rgb(255,255,255);
+    font-family: "Lato";
+    font-weight: 900;
+}
+
+.central_block p
+{
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: rgb(255,255,255);
+    font-family: "Lato";
+    
+}
+
+.start_button
+{
+    background-color: #00bb9b;
+    border-radius: 3px;
+    margin-top: 45px;
+    margin-bottom: 400px;
+    padding: 23px 70px;
+}
+
+.button_title
+{
+    font-size: 18px;
+    letter-spacing: 0;
+    color: rgb(255,255,255);
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+    margin-bottom: 200px;
+}
+
+.destination
+{
+    height: 170px;
+    margin-bottom: 95px;
+    text-align: center;
+    
+}
+
+.destination p
+{
+    //font-size: 19px;    
+    //letter-spacing: 1px;
+    //line-height: 27px;
+    font-family: "Source Sans Pro";
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.destination h2
+{
+    font-size: 44px;
+    letter-spacing: 0.4px;
+    line-height: 88px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.property
+{
+    margin-bottom: 125px;
+}
+
+.property h3
+{
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    font-family: "Lato";
+    font-weight: bold;
+}
+
+.property .central_img
+{
+    margin-left: 18px;
+}
+
+.another_background
+{
+    background-color: #f1f5f7;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.another_background::before
+{
+    background-color: #f1f5f7;
+}
+
+.another_background h2
+{
+    font-size: 42px;
+    letter-spacing: 0.5px;
+    line-height: 84px;
+    font-weight: 600;
+}
+
+.sample_work_title
+{
+    height: 110px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+.sample_work_title h4
+{
+    font-size: 20px;
+    //letter-spacing: px;
+    line-height: 26px;
+    font-weight: 600;
+    //margin-bottom: 15px;
+}
+
+.indicators
+{
+    background: url("../img/indicators1.png") no-repeat 50% 230px;
+    height: 380px;
+    margin-top: 80px;
+    
+}
+
+.suggest_try
+{
+    text-align: center;
+    height: 345px;
+    margin-top: 130px;
+}
+
+.suggest_try h2
+{
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #506a85;
+    font-size: 44px;
+    line-height: 130%;
+}
+
+.touch_button
+{
+    background-color: #00bb9b;
+    border-radius: 3px;
+}
+
+.another_background p,
+.suggest_try p
+{
+    font-size: 19px;    
+    letter-spacing: 1px;
+    line-height: 27px;
+    font-family: "Source Sans Pro";
+}
+
+.footer
+{
+    background-color: #2f3f51;
+    height: 365px;
+    padding-top: 75px;
+    border: 0px solid rgb(21,169,139);
+    //position: absolute;
+    //width: 1920px;
+}
+
+.footer h3
+{
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    color: rgb(255,255,255);
+    font-family: "Lato";
+    font-weight: bold;
+    //margin-bottom: 25px;
+}
+
+.footer p,
+ul
+{
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    font-weight: 600;
+    color: #a3b1bf;
+    margin-top: 18px;
+}
+
+.logo
+{
+    margin-top: 16px;
+}
+
+.first_work_group
+{
+    margin-bottom: 5px;
+}
+
+.email
+{
+    color: #00bc9c;
+}
+
+a:hover
+{
+    color: #2ca792;
+}
+
+ul
+{
+    list-style-type: none;
+    
+}
+
+li.address
+{
+    list-style-image: url("../img/icon-location.png");
+}
+
+li.phone
+{
+    list-style-image: url("../img/icon-mobile.png");
+}
+
+li.email_address
+{
+    list-style-image: url("../img/icon-mail-1.png");
+}
+
+
+.column
+{
+    padding: 5px;
+    margin-left: -5px;
+}
+
+.lastest_works
+{
+    margin-top: 18px;
+}
+
+.under_footer
+{
+    height: 85px;
+    background-color: #273545;
+    border: 0px solid rgb(21,169,139);
+    padding: 15px;
+}
