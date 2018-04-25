@@ -5,6 +5,11 @@
     font-size: 0;
 }
 
+.menu_hamburger
+{
+    display: none;
+}
+
 .menu a
 {
     font-size: 19px;
@@ -395,7 +400,7 @@ form
     text-align: center;
 }
 
-.popup h2
+.write_me_header
 {
     margin-left: 60px;
     margin-top: 42px;
@@ -407,6 +412,7 @@ form
     font-weight: 600;
     display: block;
     float: left;
+    max-width: 250px;
 }
 
 
@@ -459,10 +465,9 @@ form
     background-image: url("../images/exit_icon.png");
     background-repeat: no-repeat;
     display: block;
-    float: left;
-    padding: 20px 20px;
-    margin-left: 47%;
-    margin-top: 32px;
+    float: right;
+    background-position: 5px 30px;
+    padding: 40px 30px;
 }
 
 input[type="text"]
@@ -606,7 +611,6 @@ input[type="submit"]
 
 @media screen and (max-width: 1280px) and (min-width: 640px)
 {
-
     .first_film
     {
         width: 43%;
@@ -615,15 +619,13 @@ input[type="submit"]
         margin-bottom: 3%;
     }
     
-
     .second_film
     {
         width: 43%;
-        margin-right: 3%;
-        margin-left: 4%;
+        margin-right: 4%;
+        margin-left: 3%;
         margin-bottom: 3%;
     }
-    
 
     .third_film
     {
@@ -650,18 +652,189 @@ input[type="submit"]
         width: 100%;
         height: auto;
     }
+    
+    .my_films_block h2
+    {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    .content .left_part,
+    .content .right_part
+    {
+        margin-top: 200px;
+    }
+    
+    body
+    {
+        background-size: 1800px;
+    }
+    
+}
+
+@media screen and (max-width: 800px)
+{
+    body
+    {
+        background-size: 1700px;
+    }
+    
+    .content .left_part,
+    .content .right_part
+    {
+        margin-top: 200px;
+    }
+    
+    blockquote
+    {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    
+    .autor
+    {
+        line-height: 36px;
+        font-size: 16px; 
+    }
+}
+
+
+@media screen and (max-width: 640px)
+{
+    .about_me_item, 
+    .my_films_item, 
+    .hobby_item
+    {
+        display: none;
+        padding-right: 10px;
+    }
+    
+    .menu_hamburger
+    {
+        display: block;
+        background-image: url("../images/hamburger.png");
+        background-repeat: no-repeat;
+        background-position: 97% 50%;
+        background-size: 50px;
+        padding: 25px 20px;
+    }
+    
+    .content .right_part,
+    .content .left_part
+    {
+        margin-top: 180px;
+    }
+    
+    .my_films_block,
+    .advansed_film_block
+    {
+        width: 90%;
+        margin: 30px auto;
+    }
+    
+    .my_films_block h2
+    {
+        display: block;
+        width: 90%;
+        margin: 30px auto;
+    }
+    
+    .first_film,
+    .second_film,
+    .third_film,
+    .fourth_film
+    {
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+    }
+    
+    .my_films_block p,
+    .advansed_film_block p
+    {
+        margin-bottom: 20px;
+    }
+    
+    .my_films_block img,
+    .advansed_film_block img
+    {
+        width: 100%;
+        height: auto;
+    }
+    
+    body
+    {
+        background-position: 0 50px;
+        background-size: 1500px;
+    }
+    
+    blockquote
+    {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    
+    .autor
+    {
+        line-height: 34px;
+        font-size: 14px; 
+    }
+    
+    .my_films_block h2
+    {
+        margin-top: 40px;
+    }
+    
+    .feedback_writeme .line
+    {
+        display: none;
+    }
+    
+    .feedback_header
+    {
+        width: 100%;
+        float: none;
+        max-width: 100%;
+    }
+
+    textarea
+    {
+        width: 87%;
+        margin-left: 2.5%;
+        
+    }
+    
+    input[type="text"]
+    {
+        width: 90%;
+        margin-left: 2.5%;
+    }
+    
+    select
+    {
+        width: 94%;
+        margin-left: 2%;
+    }
 }
 
 @media screen and (max-width: 570px)
 {
+    .menu
+    {
+        float: none;
+    }
+    
     .content .left_part
     {
         float: none;
         width: 80%;
         margin: 0 auto;
-        
+        margin-top: 150px;
     }
-    .right_part
+    
+    .content .right_part
     {
         float: none;
         width: 80%;
@@ -700,118 +873,5 @@ input[type="submit"]
     {
         margin-left: 2.5%;
         width: 90%;
-    }
-}
-
-@media screen and (max-width: 900px)
-{
-    .content .left_part
-    {
-        margin-top: 250px;
-    }
-}
-
-@media screen and (max-width: 640px)
-{
-    .about_me_item, .my_films_item, .hobby_item
-    {
-        display: block;
-        padding-right: 10px;
-    }
-    
-    .about_me_item
-    {
-        width: 85px;
-    }
-    
-    .my_films_item
-    {
-        width: 180px;
-    }
-    
-    .hobby_item
-    {
-        width: 105px;
-    }
-    
-    .my_films_block,
-    .advansed_film_block
-    {
-        width: 90%;
-        margin: 30px auto;
-    }
-    
-    .first_film,
-    .second_film,
-    .third_film,
-    .fourth_film
-    {
-        width: 90%;
-        margin: 0 auto;
-        float: none;
-    }
-    
-    img
-    {
-        width: 100%;
-        height: auto;
-    }   
-    
-    body
-    {
-        background-position: 0 150px;
-        background-size: 1500px;
-    }
-    
-    .content
-    {
-        margin-top: -50px;
-    }
-    
-    blockquote
-    {
-        font-size: 24px;
-        line-height: 34px;
-    }
-    
-    .autor
-    {
-        line-height: 34px;
-        font-size: 14px; 
-    }
-    
-    .my_films_block h2
-    h2
-    {
-        margin-top: 40px;
-    }
-    
-    .feedback_writeme .line
-    {
-        display: none;
-    }
-    
-    .feedback_header
-    {
-        width: 90%;
-    }
-
-    textarea
-    {
-        width: 85%;
-        margin-left: 2.5%;
-        
-    }
-    
-    input[type="text"]
-    {
-        width: 90%;
-        margin-left: 2.5%;
-    }
-    
-    select
-    {
-        width: 95%;
-        margin-left: 2%;
     }
 }
