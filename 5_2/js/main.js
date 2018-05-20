@@ -3,63 +3,78 @@ window.onload = function() {
     showPopupWindow();
 }
 
-function showFilmBlock(){
+function showFilmBlock() {
     var filmButton = document.getElementById('all_films_button');
 
     function displayFilmBlock(event) {
         event.preventDefault();
-        var elem = document.getElementById('hidden_block');
+        var advancedFilm = document.getElementById('hidden_block');
         filmButton.style.display = 'none';
-        elem.classList.add('visible_advanced_film');
+        advancedFilm.classList.add('visible_advanced_film');
     }
     
     filmButton.addEventListener('click', displayFilmBlock);
 }
 
-function showPopupWindow(){
-    var popupWindow = document.getElementsByClassName('popup')[0];
-    var background = document.getElementsByClassName('background')[0];
+function showPopupWindow() {
+    var popupWindow = document.getElementById('popup');
+    var background = document.getElementById('background');
+    var requiredFields = document.getElementsByClassName('required_field');
+    var tagBody = document.getElementsByTagName('body')[0];
+    var tagHtml = document.getElementsByTagName('html')[0];
     
-    function displayWindow(event){
+    function displayWindow(event) {
+        
         event.preventDefault();
         background.classList.add('set_visible');
         popupWindow.classList.add('set_visible');
+        tagBody.classList.add('remove_overflow');
+        tagHtml.classList.add('remove_overflow');
     }
 
-    function closeWindow(event){
+    function closeWindow(event) {
         event.preventDefault();
         background.classList.remove('set_visible');
         popupWindow.classList.remove('set_visible');
+        tagBody.classList.remove('remove_overflow');
+        tagHtml.classList.remove('remove_overflow');
+    }
+    
+    function removeBorder() {
+        this.classList.remove('error');
     }
 
+    document.getElementById('writeme').addEventListener('click', displayWindow);
     document.getElementById('close_window').addEventListener('click', closeWindow);
-    document.getElementsByClassName('write_me')[0].addEventListener('click', displayWindow);
     background.addEventListener('click', closeWindow);
-
-    function checkForm() {
-        var i;
-        var required_fild = document.getElementsByClassName('required_field');
-        
-        event.preventDefault();
-        
-        function setBorder(inputArea){
-            inputArea.classList.add('error');
-        }
-        
-        function removeBorder(){
-            this.classList.remove('error');
-        }
-
-        for (i = 0; i < required_fild.length; i++){
-            if (required_fild[i].value == '')
-                setBorder(required_fild[i])
-        }
-        
-        for (i = 0; i < required_fild.length; i++){
-            required_fild[i].addEventListener('focus', removeBorder);
-        }
-        
-    }
     document.getElementById('send').addEventListener('click', checkForm);
+    for (var i = 0; i < requiredFields.length; i++) {
+        requiredFields[i].addEventListener('focus', removeBorder);
+    }
 }
 
+function checkForm() {
+    var hasEmptyFields = false;
+    var requiredFields = document.getElementsByClassName('required_field');
+    
+    for (var i = 0; i < requiredFields.length; i++){
+        if (requiredFields[i].value == '') {
+            requiredFields[i].classList.add('error');
+            hasEmptyFields = true;
+            }
+    }
+    
+    if (hasEmptyFields) {
+        event.preventDefault();
+    }
+}
+
+
+/* 
+
+1. advansedFilm - опечатка
+2. При открытии модалльного окна нужно блокировать прокрутку сайта (overflow hidden для body и html)
+3. Форма не отправляется.
+4. Вместо того, чтобы брать первый элемент коллекции, полученной по классу - лучше брать элемент по ID.
+
+*/
