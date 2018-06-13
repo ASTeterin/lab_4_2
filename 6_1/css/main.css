@@ -172,9 +172,9 @@
 }
 
 
-.header .mega_menu li
+.header .mega_menu
 {
-    margin: 0;
+    padding-bottom: 15px;
 }
 
 .menu_item
@@ -206,31 +206,124 @@
 .search_icon
 {
     margin-top: 55px;
-    //margin-left: 20%;
 }
 
 .search
 {
-    margin-left: 18%;
+    background-image: url("../img/icon-search.png");
+    background-repeat: no-repeat;
+    padding: 15px;
+    margin-right: 30px;
+    margin-top: -35px;
 }
 
-
-.set_wid
+.search:hover
 {
-    width: 1170px !important;
-    height: 420px !important;
+    cursor: pointer;
 }
 
-.mega_menu:hover
+.mega_menu_block
 {
-    color: #00bb9b;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: none;
+    background-color: #f1f5f7;
+    position: absolute;
+    top: 82px;
+    left: 4%;
+    border-radius: 3px;
 }
 
-.special_pages
+.mega_menu_header
+{
+    margin-top: 37px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    color: rgb(80,106,133);
+    font-family: "Lato";
+    font-weight: bold;
+}
+
+
+li:hover .mega_menu_block
+{
+    display: block;
+}
+
+.focus_on_text
+{
+    margin-top: 30px;
+}
+
+.mega_menu:hover 
+{
+    display: block;
+    background-color: #f1f5f7;
+    border-radius: 3px;
+}
+
+.mega_menu_block .mega_menu_button
+{
+    background-color: #00bb9b;
+    border-radius: 3px;
+    width: 130px;
+    margin-bottom: 43px;
+}
+
+.mega_menu_button:hover
+{
+    background-color: #009f83;
+}
+
+.mega_menu_button_title
+{
+    letter-spacing: 0.4px;
+    color: rgb(255,255,255);
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.special_pages a
 {
     margin: 0;
+    padding: 8px;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgb(80,106,133);
+    font-family: "Lato";
+    text-align: left;
+    font-weight: 600;
 }
 
+.mega_menu_list
+{
+    list-style-image: url("../img/circle-list-item.png");
+}
+
+.mega_menu_text
+{
+    font-size: 12px;
+    line-height: 22px;
+    color: rgb(80,106,133);
+    font-family: "Lato";
+    font-weight: 600;
+
+}
+
+.latest_work_img:hover
+{
+    opacity: 0.1;
+    transition:opacity 0.3s 0.3s;
+    cursor: pointer;
+}
+
+.mega_menu_block .read_more_button
+{
+    width: 115px;
+}
 
 .hamburger
 {
@@ -240,7 +333,6 @@
     background-size: 50px;
     padding: 55px 25px;
     margin-right: 10px;
-
 }
 
 .top
@@ -285,10 +377,27 @@
     padding: 23px 70px;
 }
 
+.start_button:hover
+{
+    background-color: #009f83;
+}
+
 .button_title
 {
     font-size: 18px;
-    letter-spacing: 0;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: rgb(255,255,255);
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+    margin-bottom: 200px;
+}
+
+.touch_button_title
+{
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0.4px;
     color: rgb(255,255,255);
     font-family: "Source Sans Pro";
     font-weight: bold;
@@ -297,7 +406,6 @@
 
 .destination
 {
-    //height: 170px;
     margin-bottom: 100px;
     text-align: center;
     color: #4d5b6a;
@@ -320,7 +428,7 @@
     font-weight: 600;
     font-family: "Lato";
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .property
@@ -331,7 +439,6 @@
     line-height: 18px;
     font-weight: 500;
     color: #4d5b6a;
-
 }
 
 .property h3
@@ -401,21 +508,81 @@
 .card_img:hover
 {
     opacity: 0.1;
+    transition:opacity 0.3s 0.3s;
+    cursor: pointer;
+}
+
+.transparent
+{
+    opacity: 1;
 }
 
 .transparent:hover
 {
     opacity: 0.1;
+    transition:opacity 0.3s 0.3s;
+    cursor: pointer;
+    
+}
+
+.bg_plus
+{
+    background-image: url("../img/icon-plus.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    opacity: 1;
+}
+
+.karusel_text_first
+{
+    opacity: 0;
+    color: white;
+    position: absolute;
+    top: 35%;
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: 16px;
+    text-align:center; 
+    width:80%;
+    margin-left: 10%;
+}
+
+.karusel_text_second
+{
+    opacity: 0;
+    color: white;
+    position: absolute;
+    top: 50%;
+    font-size: 16px;
+    font-family: "Source Sans Pro";
+    text-align:center; 
+    width:80%;
+    margin-left: 10%;
+    
 }
 
 .img_bg
 {
     background-image: url("../img/background_green.png");
     background-size: 50px;
-    max-width: 570px;
     width: 100%;
     height: auto;
+    opacity: 1;
+    position: relative;
+}
 
+
+.img_bg:hover .karusel_text_first
+{
+    opacity: 1;
+    transition:opacity 0.3s 0.3s;
+}
+
+.img_bg:hover .karusel_text_second
+{
+    opacity: 1;
+    transition:opacity 0.3s 0.3s;
 }
 
 .sample_work_title h4
@@ -428,15 +595,15 @@
 
 .indicators
 {
-    margin: 30px auto 20px;
+    margin: 30px auto 130px;
 }
 
 .suggest_try
 {
     text-align: center;
-    height: 365px;
     margin-top: 125px;
     color: #4d5b6a;
+    margin-bottom: 100px;
 }
 
 .suggest_try h2
@@ -455,7 +622,14 @@
     border-radius: 3px;
     font-family: "Source Sans Pro";
     font-size: 15px;
+    padding: 15px 28px;
 }
+
+.touch_button:hover
+{
+    background-color: #00967c;
+}
+
 
 .suggest_try p
 {
@@ -484,7 +658,6 @@
     color: rgb(255,255,255);
     font-family: "Lato";
     font-weight: bold;
-    //margin-bottom: 25px;
 }
 
 .footer p,
@@ -522,29 +695,24 @@
     color: #00bc9c;
 }
 
-
-
 .latest_work_img
 {
     width: 100%;
     height: auto;
-    
 }
 
 .latest_work_img:hover
 {
-    opacity: 0.3;
+    opacity: 0.1;
+    transition:opacity 0.3s 0.3s;
 }
 
 .img_bg_small
 {
-
     background-image: url("../img/background_green.png");
-    //max-width: 125px;
     margin-bottom: 5px;
     margin-right: 5px;
     width: initial;
-    //height: 85px;
 }
 
 a:hover
@@ -555,7 +723,6 @@ a:hover
 ul
 {
     list-style-type: none;
-    
 }
 
 li.address
@@ -614,15 +781,9 @@ li.email_address
     font-weight: bold;
     text-align: center;
 }
-
-.button_tittle1
+.input-group-rounded .input-group-button .button:hover
 {
-    font-size: 13px;
-    letter-spacing: 0px;
-    color: rgb(255,255,255);
-    font-family: "Source Sans Pro";
-    font-weight: bold;
-    text-align: center;
+    background-color: #009f83;
 }
 
 .after_footer
@@ -634,9 +795,7 @@ li.email_address
 }
 .dot
 {
-    //display: block;
-    //float: left;
-    line-height: 60px;
+    line-height: 36px;
     font-size: 14px;
     color: rgb(80,106,133);
     font-family: "Source Sans Pro";
@@ -650,31 +809,59 @@ li.email_address
     font-family: "Source Sans Pro";
 }
 
+.after_footer_text
+{
+    float: left;
+    margin-left: 5%;
+}
+
+.after_footer_menu
+{
+    float:right;
+    width: 453px;
+}
+
 .after_footer a
 {
     line-height: 36px;
     font-size: 14px;
     color: rgb(80,106,133);
     font-family: "Source Sans Pro";
+    display: inline;
 }
 
-.after_footer_menu
+.after_footer a:hover
 {
-    //display: inline-block;
-    
+    color: #2ca792;
 }
 
 @media screen and (max-width: 1024px)
 {
+    .top_block h1
+    {
+        margin-top: 130px;
+    }
+    
     .footer
     {
         height: 650px;
         background-size: 530px;
     }
     
+    .destination
+    {
+        margin-bottom: 50px;
+    }
+    
     .destination p
     {
         margin: 0 auto;
+    }
+    
+    .destination h2
+    {
+        margin-top: 60px;
+        line-height: 44px;
     }
     
     .footer_second_row
@@ -684,12 +871,18 @@ li.email_address
     
     .start_button
     {
-        margin-bottom: 300px;
+        margin-bottom: 130px;
+    }
+    
+    .last_works_background
+    {
+        padding-top: 60px;
     }
     
     .property
     {
         text-align: center;
+        margin-bottom: 50px;
     }
     
     .property img
@@ -713,20 +906,62 @@ li.email_address
         
     }
     
-    .after_footer ul
+    .after_footer_text
+    {
+        float: none;
+        text-align: center;
+    }
+    
+    .after_footer_menu
+    {
+        float: none;
+        margin: 0 auto;
+    }
+    
+    .after_footer_menu ul
     {
         margin: 0 auto;
     }
     
-    .footer_text
+     .destination
     {
-        text-align: center; 
-        margin: 0 auto;
+        margin-bottom: 50px;
     }
+    
+    .property
+    {
+        margin-bottom: 50px;
+    }
+    
+    .last_works_background
+    {
+        padding-top: 80px;
+    }
+    
+    .indicators
+    {
+        margin-bottom: 80px;
+    }
+    
+    .suggest_try
+    {
+        margin-top: 80px;
+    }
+    
+    .destination h2
+    {
+        line-height: 56px;
+    }
+    
 }
 
 @media screen and (max-width: 640px)
 {
+    .suggest_try
+    {
+        margin-bottom: 50px;
+    }
+    
     .footer
     {
         height: 1100px;
@@ -740,8 +975,77 @@ li.email_address
     
     .top_block h1
     {
-        font-size: 42px;
+        font-size: 56px;
         margin-top: 180px;
+        line-height: 56px;
     }
     
 }
+
+@media screen and (max-width: 490px)
+{
+    .after_footer
+    {
+        height: 155px;
+    }
+    
+    .after_footer_menu
+    {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .after_footer_menu li
+    {
+        margin: 0 auto;
+        //height: 20px;
+        //padding: 0;
+    }
+    
+    .after_footer_menu a
+    {
+        padding: 0 16px;
+    }
+    
+    .dot
+    {
+        line-height: 36px;
+    }
+    
+    .footer
+    {
+        height: 1050px;
+    }
+    
+    .top_block h1
+    {
+        font-size: 44px;
+        line-height: 44px;
+    }
+}
+
+
+
+.header_menu
+{
+    opacity: 0;
+}
+
+.menu_item:hover .header_menu
+{
+    opacity: 1;
+}
+
+/*
+
+1. Увеличить отступ снизу у карусели с картинками.+
+2. Неправильный цвет при наведении у кнопок.
+3. Не хватает текста в картинках при наведении. Наведенное состояние должно появляться плавно, для этого поставить transition на opacity.
+4. Проверить шрифт и внутренние отступы у кнопки.
+
+Адаптивность:
+5. Уменьшить вертикальные отступы у блоков для планшетов/мобильников.
+6. Уменьшить line-height при уменьшении размеров шрифта заголовка.
+7. Ошибки валидации.
+
+*/

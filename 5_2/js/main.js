@@ -61,20 +61,10 @@ function checkForm() {
         if (requiredFields[i].value == '') {
             requiredFields[i].classList.add('error');
             hasEmptyFields = true;
-            }
+        }
     }
     
     if (hasEmptyFields) {
         event.preventDefault();
     }
 }
-
-
-/* 
-
-1. advansedFilm - опечатка
-2. При открытии модалльного окна нужно блокировать прокрутку сайта (overflow hidden для body и html)
-3. Форма не отправляется.
-4. Вместо того, чтобы брать первый элемент коллекции, полученной по классу - лучше брать элемент по ID.
-
-*/
