@@ -163,7 +163,15 @@
     height: 110px;
     background-image: url("../img/logo_dark.png");
     background-repeat: no-repeat;
-    background-position: 7% center; 
+    background-position: 7% center;
+    cursor: pointer;
+}
+
+.header:hover
+{
+    background-image: url("../img/logo_hov.png");
+    background-repeat: no-repeat;
+    background-position: 7% center;
 }
 
 .header_menu
