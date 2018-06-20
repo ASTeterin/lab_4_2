@@ -2,7 +2,9 @@
 {
     margin: 0 auto;
     max-width: 1000px;
-    font-size: 0;
+    font-size: 19px;
+    font-family: "Georgia", sans-serif;
+    color: rgb(51,51,51);
 }
 
 .menu_hamburger
@@ -12,7 +14,6 @@
     width: 70%;
     height: 50px;
     margin-left: 3%;
-    padding-right: 60px;
 }
 
 .hamburger_icon
@@ -21,39 +22,36 @@
     background-repeat: no-repeat;
     background-position: 3% 100%;
     background-size: 50px;
-    padding: 45px 25px;
-    //width: 50px;
+    padding: 25px 25px;
 }
 
-.menu .menu_hamburger_text
+.menu .menu_text
 {
+    display: none;
     width: 100px;
-    height: 40px;
-    display: block;
+    line-height: 50px;
+}
+
+.menu .visible
+{
+    display: inline;
 }
 
 .menu .menu_item
 {
-    font-size: 19px;
-    font-family: "Georgia", sans-serif;
-    color: black;
     padding-left: 45px;
     padding-right: 21px;
     padding-top: 15px;
     padding-bottom: 14px;
+    color: rgb(51,51,51);
 }
 
 .menu .mobile_menu
 {
-    display: block;//
-    width: 100%;
+    display: block;
+    //width: 100%;
     max-width: 600px;
     text-align: center;
-    font-size: 19px;
-    font-family: "Georgia", sans-serif;
-    color: black;
-    //margin: 0 auto;
-    
 }
 
 .menu .exit_icon
@@ -61,7 +59,7 @@
     background-image: url("../images/exit_icon.png");
     background-repeat: no-repeat;
     background-size: 30px;
-    background-position: 3% 100%;
+    background-position: 3% 50%;
 }
 
 .add_film_form
@@ -119,16 +117,6 @@
     margin-top: 4px;
     margin-bottom: 24px;
     padding-left: 3%;
-    //border: 2px solid rgb(201,201,201);
-    //border-radius: 2px; 
-    //margin-left: 9%;
-}
-
-.feedback_label
-{
-    //max-width: 540px;
-    //width: 100%;
-    
 }
 
 .about_me_item

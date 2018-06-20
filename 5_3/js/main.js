@@ -1,4 +1,4 @@
-Revealator.effects_padding = '-500';
+Revealator.effects_padding = '-200';
 
 window.onload = function() {
     //showFilmBlock();
@@ -6,6 +6,7 @@ window.onload = function() {
     showAddingFilmPopup();
     createNewFilm();
     showMobileMenu();
+    initSmoothScroll();
 }
 
 function showMobileMenu() {
@@ -28,6 +29,7 @@ function showMobileMenu() {
                 $(this).toggleClass('add_film_item');
             }
         });
+        $('.menu_text').toggleClass('visible');
         if ($('#about_me').hasClass('mobile_menu')) {
             $('body').css('background-position', '0 250px');
         }
@@ -39,6 +41,7 @@ function showMobileMenu() {
     $(window).resize(function() {
         if ($(window).width() > '883') {
             $('#hamburger').removeClass('exit_icon');
+            $('.menu_text').removeClass('visible');
             $('body').css('background-position', '0 50px');
             menuItem.each(function() {
                 if ($(this).text() == 'Обо мнe') {
@@ -59,23 +62,25 @@ function showMobileMenu() {
     });
 }
 
+function initSmoothScroll() {
+    $('.about_me_item').on('click', function() {
+        $.smoothScroll({scrollTarget: '#my_name'});
+        //return false;
+    });
 
+    $('.hobby_item').on('click', function() {
+        $.smoothScroll({scrollTarget: '.my_hobby'});
+        //return false;
+    });
+
+    $('.my_films_item').on('click', function() {
+        $.smoothScroll({scrollTarget: '.my_films_block'});
+        //return false;
+    });
+}
  
 
-$('.about_me_item').on('click', function() {
-  $.smoothScroll({scrollTarget: '#my_name'});
-  return false;
-});
 
-$('.hobby_item').on('click', function() {
-  $.smoothScroll({scrollTarget: '.my_hobby'});
-  return false;
-});
-
-$('.my_films_item').on('click', function() {
-  $.smoothScroll({scrollTarget: '.my_films_block'});
-  return false;
-});
 
 function showAddingFilmPopup(){
     $('.add_film_item').click(function(){
@@ -187,7 +192,7 @@ function showPopupWindow() {
     }
 
     document.getElementById('writeme').addEventListener('click', displayWindow);
-    document.getElementById('close_window').addEventListener('click', closeWindow);
+    document.getElementById('close_popup_window').addEventListener('click', closeWindow);
     background.addEventListener('click', closeWindow);
     document.getElementById('send').addEventListener('click', checkForm);
     for (var i = 0; i < requiredFields.length; i++) {
